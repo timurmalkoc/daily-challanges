@@ -14,3 +14,10 @@ print(get_sigle_item([2,2,1]))
 print(get_sigle_item([1]))
 
 print("Execution time = ", time.time()-st)
+
+
+def find_index(lst, target):
+    return lst.index(target) if lst.count(target) else -1
+
+
+print(find_index([-1,0,3,5,9,12],5))
