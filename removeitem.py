@@ -28,7 +28,7 @@ print(searchInsert([1,3,5,6],5))
 
 def find_place(score):
     place = {0:"Gold Medal", 1:"Silver Medal", 2:"Bronze Medal",3:"4",4:"5",}
-    return [place[score.index(x)] for x in sorted(score, reverse=True)]
+    return [place[sorted(score, reverse=True).index(x)] for x in score]
 
 print(find_place([5,4,3,2,1]))
 print(find_place([10,3,8,9,4]))
