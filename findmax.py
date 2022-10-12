@@ -28,3 +28,18 @@ def find_max2(lst):
 print(find_max([-2,1,-3,4,-1,2,1,-5,4]))
 print(find_max([1]))
 print(find_max([5,4,-1,7,8]))
+
+def multiply(k):
+    return k if k%2==0 else k*2
+
+print(multiply(5))
+print(multiply(6))
+
+def total_zero(num):
+    return [x for x in range(-num//2,num//2+1) if x!=0] if num%2==0 else [x for x in range(-num//2+1,num//2+1)]
+
+
+print(total_zero(4))
+print(total_zero(6))
+print(total_zero(7))
+
