@@ -58,3 +58,20 @@ print(max_subarray([1,3,5,4,2,3,4,5]))
         
 
 
+def DividingNumbers(left, right):
+        
+    def divisible(n):
+        for d in str(n):
+            if d == '0' or n % int(d) > 0:
+                return False
+        return True
+    
+    
+    res = []
+    for n in range(left, right + 1):
+        if divisible(n):
+            res.append(n)
+    return res
+
+
+print(DividingNumbers(1,22))
