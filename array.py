@@ -75,3 +75,10 @@ def DividingNumbers(left, right):
 
 
 print(DividingNumbers(1,22))
+
+def squares_needed(n):
+    if n==0:
+        return 0
+    return len("{0:b}".format(int(n)))
+
+print(squares_needed(4))
