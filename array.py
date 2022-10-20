@@ -82,3 +82,6 @@ def squares_needed(n):
     return len("{0:b}".format(int(n)))
 
 print(squares_needed(4))
+
+def ref(num):
+    

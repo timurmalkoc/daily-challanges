@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+}
+
+.hero{
+    background-image: url("./img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.link {
+    color: white !important;
+    text-decoration: underline;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: white !important;
+    
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
