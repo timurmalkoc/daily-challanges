@@ -67,3 +67,16 @@ def recursive_find(lst, target, low, high):
 lst = [-1,0,3,5,9,12]
 
 print(recursive_find(lst, 3, 0, len(lst)))
+
+def firstMissingPositive(nums):
+    positives = sorted([x for x in nums if x>0])
+    for x,val in enumerate(positives, start=1):
+        if x!=val:
+            return x
+    else:
+        return x+1
+
+print("firstMissingPositive")
+print(firstMissingPositive([3,4,-1,1]))
+print(firstMissingPositive([7,8,9,11,12]))
+print(firstMissingPositive([1,2,0]))
