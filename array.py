@@ -83,5 +83,14 @@ def squares_needed(n):
 
 print(squares_needed(4))
 
-def ref(num):
-    
+
+
+def findMaxK(nums):
+        for num in sorted(nums, reverse=True):
+            if -num in nums:
+                return num
+        return -1
+
+print(findMaxK([-1,2,-3,3]))
+print(findMaxK([-1,10,6,7,-7,1]))
+print(findMaxK([-10,8,6,7,-2,-3]))
