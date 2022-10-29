@@ -1,3 +1,6 @@
+from traceback import print_tb
+
+
 def add_one(lst):
     return [x for x in str(int(''.join([str(n) for n in lst]))+1)]
 
@@ -94,3 +97,17 @@ def findMaxK(nums):
 print(findMaxK([-1,2,-3,3]))
 print(findMaxK([-1,10,6,7,-7,1]))
 print(findMaxK([-10,8,6,7,-2,-3]))
+
+def groupAnagrams(strs):
+    d = {}
+    
+    for word in strs:
+        key = ''.join(sorted(word))
+        if key in d:
+            d.get(key).append(word)
+        else:
+            d[key] = [word]
+    return d.values()
+
+
+print(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
