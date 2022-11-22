@@ -16,3 +16,20 @@ def findKthLargest(nums, k):
 
 print(findKthLargest([3,2,1,5,6,4], 2))
 print(findKthLargest([3,2,3,1,2,4,5,5,6], 1))
+
+
+
+def majorityElement(nums):
+    d = {}
+    majority = []
+    for x in set(nums):
+        d[x] = nums.count(x)
+    appearance = len(nums)/3
+
+    for key, value in d.items():
+        if value > appearance:
+            majority.append(key)
+    
+    return majority
+
+print(majorityElement([3,2,3]))
