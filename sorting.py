@@ -33,3 +33,14 @@ def majorityElement(nums):
     return majority
 
 print(majorityElement([3,2,3]))
+
+
+def containsDuplicate(nums):
+    nums = sorted(nums)
+    for x in range(len(nums)-1):
+        if nums[x]==nums[x+1]:
+            return True
+    return False
+
+print(containsDuplicate([1,2,3,1]))
+print(containsDuplicate([1,2,3,4]))
